@@ -6,7 +6,14 @@
 </head>
 <body>
 
-<span th:text="${TEXT}"></span>
+<h1>キャラ作成</h1>
 
+<form action="/Command" method="POST">
+職業：
+<input type="radio" name="jobs" value="warrior">戦士
+<input type="radio" name="jobs" value="wizard">魔法使い<br>
+名前：<input type="text" name="charName">
+<input type="submit" value="次へ">
+</form>
 </body>
 </html>
